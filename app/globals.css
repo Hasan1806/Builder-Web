@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; background: #0c0e0d; }
+body { margin: 0; background: #0c0e0d; color: #f4f1ea; font-family: "Plus Jakarta Sans", sans-serif; }
+::selection { background: #c5a880; color: #0c0e0d; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { text-decoration: none; }
+.font-serif { font-family: "Cormorant Garamond", serif; }
+.eyebrow { margin-bottom: 1.5rem; font-size: 9px; line-height: 1.5; letter-spacing: .3em; text-transform: uppercase; color: #c5a880; }
+.section-title { font-family: "Cormorant Garamond", serif; font-size: clamp(3.5rem, 7vw, 7.5rem); font-weight: 400; line-height: .86; letter-spacing: -.045em; }
+.section-title em { color: rgba(244,241,234,.58); font-weight: 400; }
+.field { display: block; font-size: 9px; text-transform: uppercase; letter-spacing: .2em; color: rgba(12,14,13,.45); }
+.field input, .field select { width: 100%; border: 0; border-bottom: 1px solid rgba(0,0,0,.22); background: transparent; padding: 14px 0; color: #0c0e0d; font-size: 14px; letter-spacing: 0; outline: none; text-transform: none; }
+.field select { width: 86px; }
+.field input:focus, .field select:focus { border-color: #0c0e0d; }
+small { margin-top: 7px; display: block; font-size: 8px; font-weight: 400; letter-spacing: .12em; text-transform: uppercase; color: rgba(244,241,234,.35); }
+@media (max-width: 767px) { .section-title { font-size: clamp(3.3rem, 16vw, 5.4rem); } }
+@media print { nav, footer, button { display: none !important; } }
